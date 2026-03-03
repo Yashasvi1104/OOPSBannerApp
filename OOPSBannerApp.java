@@ -1,17 +1,33 @@
-class OOPSBannerApp4 {
-
+public class UC4_OOPS_Banner {
     public static void main(String[] args) {
 
-        String[] banner = {
-                String.join("", "  OOO   ", "  OOO   ", "  PPPP   ", "  SSSS "),
-                String.join("", " O   O  ", " O   O  ", "  P   P  ", " S     "),
-                String.join("", " O   O  ", " O   O  ", "  PPPP   ", "  SSS  "),
-                String.join("", " O   O  ", " O   O  ", "  P      ", "     S "),
-                String.join("", "  OOO   ", "  OOO   ", "  P      ", " SSSS  ")
+        String[] O = {
+                "  *****  ",
+                " *     * ",
+                " *     * ",
+                " *     * ",
+                "  *****  "
         };
 
-        for (String line : banner) {
-            System.out.println(line);
+        String[] P = {
+                " ******  ",
+                " *     * ",
+                " ******  ",
+                " *       ",
+                " *       "
+        };
+
+        String[] S = {
+                "  *****  ",
+                " *       ",
+                "  *****  ",
+                "       * ",
+                "  *****  "
+        };
+
+        // Print OOPS banner
+        for (int i = 0; i < 5; i++) {
+            System.out.println(O[i] + "   " + O[i] + "   " + P[i] + "   " + S[i]);
         }
     }
 }
